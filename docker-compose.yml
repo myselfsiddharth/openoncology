@@ -39,6 +39,7 @@ services:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql+asyncpg://openoncology:${DB_PASSWORD}@db:5432/openoncology
+      - LOG_LEVEL=debug
       - REDIS_URL=redis://redis:6379/0
       - MINIO_ENDPOINT=storage:9000
       - MINIO_ACCESS_KEY=${MINIO_ACCESS_KEY}

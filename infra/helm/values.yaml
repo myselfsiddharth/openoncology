@@ -26,7 +26,7 @@ api:
     # OO-19 tracks that, and it is deliberately not done here because no image
     # has been published yet and pinning a tag that does not exist is worse than
     # pinning a mutable one.
-    tag: latest
+    tag: sha-770ce3f
     pullPolicy: IfNotPresent
   replicaCount: 2
   port: 8000

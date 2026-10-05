@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+  namespace: openoncology
+spec:
+  containers:
+    - name: shell
+      image: busybox:latest
+      securityContext:
+        privileged: true
